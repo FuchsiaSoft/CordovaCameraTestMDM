@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>TestCordovaQrCodeReader</title>
+</head>
+<body>
+    <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="scripts/qrTest.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+
+    <div class="jumbotron">
+        <h1>My QR test reader for MDM</h1>
+        <p>This app is a test of using the camera to read a QR code on a MDM managed android phone using Cordova</p>
+    </div>
+    
+    <div class="app">
+        <div class="row">
+            <div class="col">
+                <button type="button" id="btnScan" class="btn btn-primary btn-block">SCAN A QR CODE</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="resultFormat">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="resultText">
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+
+</body>
+</html>
